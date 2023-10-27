@@ -3,9 +3,8 @@
 function filterArray(numbers, value) {
 let arNew =[];
     for(let i =0; i<numbers.length; i+=1){
-    if(numbers[i]>value) {
-        arNew = numbers[i];
-       console.log(arNew);
+    if(value<numbers[i]) {
+        arNew.push(numbers[i]);
     };
     };
     return arNew; 
